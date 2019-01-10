@@ -8,7 +8,7 @@ import { UserpageComponent } from './userpage/userpage.component';
 
 const routes: Routes = [
   {
-path:'',
+path:'home',
 component:HomeComponent
 
   },
@@ -18,7 +18,7 @@ component:DashboardComponent
 
   },
   {
-path:'login',
+path:'',
 component:LoginComponent
 
   },

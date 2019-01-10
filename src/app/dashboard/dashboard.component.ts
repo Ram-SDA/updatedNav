@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NavbarService } from '../navbar.service';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -7,23 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 public order;
-  constructor() {
-   this.navhide()
+  constructor(public nav: NavbarService) {
+  
    }
 
   ngOnInit() {
+    this.nav.show();
   }
 
-  navhide()
-  {
-    // var user=sessionStorage.getItem("user");
-    // if(user == "1")
-    // {
-    //   this.order=false;
-    // }
-    // else if(user == "2")
-    // {
-    //   this.order=true;
-    // }
-  }
+ 
 }
